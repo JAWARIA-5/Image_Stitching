@@ -16,14 +16,14 @@ inpaint the gaps created as a result of warping.
 <br/>
 
 
-## Deep Stitching Model UDIS
+## 🔗 Deep Stitching Model UDIS
 
 We use a model of one of the components that stitches the images. The model is available at <a href="https://drive.google.com/file/d/1GBwB0y3tUUsOYHErSqxDxoC_Om3BJUEt/view?usp=sharing"> Google Drive </a>. For more details, please look at <a href="https://github.com/nie-lang/UDIS2/tree/main">  UDIS </a>. Thank you for this open-source model :)
 
 <br/> 
 
 
-## In-painting Model
+## 🖌️ In-painting Model
 
 The inpainting we use is <a href="https://github.com/enesmsahin/simple-lama-inpainting">SimpleLama</a>. It is another open-source model that takes an image and a mask as input. The mask defines the areas that need to be inpainted. Then, Simple Lama uses Fast Fourier Convolution to fill in the gaps.
 
@@ -31,6 +31,8 @@ The inpainting we use is <a href="https://github.com/enesmsahin/simple-lama-inpa
 
 
 ### Creating the Mask
+#
+
 The mask is created using openCV functions. Firstly, the image is converted into grayscale, and then a thresholding function is applied to identify the gaps. The 
 mask is generated and stored in the "Mask" folder. 
 
@@ -45,11 +47,15 @@ mask is generated and stored in the "Mask" folder.
 
 <p align="center"><i>The input images</i></p>
 
+# 
+
 <p align="center">
   <img src="Output.png" width="60%" alt="Animated Preview">
 </p>
 
 <p align="center"><i>The output stitched and unpainted image</i></p>
+
+<br/>
 
 ## Conclusion
 
